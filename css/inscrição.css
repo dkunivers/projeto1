@@ -1,0 +1,19 @@
+.layout{
+    background-color: #e6fbfe;
+}
+.row a{
+    background-color: #ef5151;
+    border-radius: 8px;
+    color: #e6fbfe;
+}
+section h1{
+    font-family: font_1;
+}
+section h1 span{
+    font-family: font_1;
+    color: #6fc9dc;
+}
+@font-face {
+    font-family: font_1;
+    src: url(../fontes/FONT\ 1.TTF);
+}

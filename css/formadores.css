@@ -1,0 +1,205 @@
+.layout{
+    background-color: #e6fbfe;
+}
+header div a img{
+    width: 100px;
+}
+/*Menu Mobile*/
+.menu-mobile, #btn-menu{
+    display: none;
+}
+.menu-mobile{
+    background-color: hsla(190, 61%, 65%, 0.098);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    backdrop-filter: blur(10px);
+    display: block;
+    border-radius: 0px 0px 15px 15px;
+    visibility: hidden;
+    transition: 0.4s;
+    overflow: hidden;
+}
+section div h1{
+    font-family: font_1;
+    font-size: 70px;
+}
+section div h1 p {
+    font-family: font_1;
+    color: #6fc9dc;
+}
+.links{
+    color: #e6fbfe;
+    margin-right: 20px;
+    border: solid 1px #6fc9dc;
+    background-color: #6fc9dc;
+    padding: 15px;
+    transition: 0.3s;
+    border-radius: 70% 30% 70% 30%;
+    font-size: 13px; 
+}
+.links:hover{
+    box-shadow: 3px 3px 8px #6fc9dc;
+    font-size: 15px;
+}
+/*--------------------------------------------------*/
+.formador article img{
+    width: 240px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+.formador article div div button{
+    background-color: #6fc9dc;
+    border: transparent;
+    border-radius: 7px;
+    color: #e6fbfe;
+    transition: 0.3s;
+}
+.formador article div div button:hover{
+    background-color: #51efbc;
+    box-shadow: #51efbc 0px 0px 4px;
+}
+.dropdown-menu{
+    width: max-content;
+    transition: 0.3s;
+    background-color: #51efbc;
+}
+.list li{
+    color: black;
+}
+.list a {
+    transition: 0.3s;
+    color: black;
+}
+.list li a:hover{
+    color: #51efbc;
+}
+/*--------------------------------------------------*/
+footer div a img{
+    width: 30px;
+    margin-right: 4px;
+    transition: 0.3s;
+}
+footer div img{
+    width: 170px;
+}
+footer div a img:hover{
+    box-shadow: 0px 0px 4px rgba(111, 202, 220, 0.307);
+    width: 34px;
+}
+footer div p, footer div p a{
+    color: #6fc9dc;
+    transition: 0.3s;
+}
+footer div p a:hover{
+    text-shadow: 0px 0px 4px rgba(111, 202, 220, 0.307);
+    font-size: 17px;
+}
+footer div p small img{
+    width: 20px;
+    margin-right: 7px;
+}
+footer div form label{
+    color: #6fc9dc;
+}
+footer div form div input, footer div form div input::placeholder{
+    border: none;
+    color: #e6fbfe;
+    background-color: transparent;
+}
+footer div form div{
+    width: max-content;
+    height: max-content;
+    padding: 4px;
+    background-color: #6fc9dc;
+    border-radius: 4px;
+}
+.enviar_btn{
+    border-radius: 4px;
+    background-color: #51efbc;
+}
+@font-face {
+    font-family: font_1;
+    src: url(../fontes/FONT\ 1.TTF);
+}
+@font-face {
+    font-family: font_2;
+    src: url(../fontes/FONT\ 2.ttf);
+}
+@font-face {
+    font-family: font_3;
+    src: url(../fontes/FONT\ 3.ttf);
+}
+
+@media screen and (max-width: 768px) {
+    /*Menu Mobile*/
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-mobile.abrir-menu{
+        visibility: visible;
+        height: 230px;
+    }
+    .menu-mobile a{
+        transition: 0.3s;
+        border: 1px solid transparent;
+        width: 100%;
+        margin-bottom: 4px;
+        font-size: 17px;
+        padding: 5px;
+        display: block;
+    }
+    .menu-mobile a:hover{
+        border: 1px solid hsla(190, 61%, 65%, 0.17);
+        background-color: hsla(190, 61%, 65%, 0.17);
+        width: 100%;
+    }
+    #btn-menu{
+        display: block;
+    }
+   /*btn-menu*/
+   section header button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+   }
+   .linha{
+    width: 30px;
+    height: 2px;
+    background-color: #6fc9dc;
+    display: block;
+    margin: 5px auto;
+    transform-origin: center;
+    border-radius: 1px;
+    transition: 0.3s;
+   }
+   section header button.ativar .linha:nth-child(1){
+    transform: translateY(1px) rotate(-40deg);
+    background-color: #ef5151;
+   }
+   section header button.ativar .linha:nth-child(2){
+    display: none;
+   }
+   section header button.ativar .linha:nth-child(3){
+    transform: translateY(-7px) rotate(40deg);
+    background-color: #ef5151;
+   } 
+    /*----------*/
+    .formador article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+    
+
+}
